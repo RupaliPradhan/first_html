@@ -1,0 +1,122 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  opacity: 0.85;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.form {
+  max-width: 1024px;
+  margin: 4rem auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  background: rgb(235, 246, 252);
+}
+
+.form__title {
+  padding: 20px 0;
+}
+
+.form__section {
+  padding: 12px 0;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #ccc;
+}
+
+.required-symbol {
+  color: red;
+}
+
+.form__form-control {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+
+.form__input-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.form__input {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Education */
+.form__edu-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.form__edu-control {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+/* Upload Document */
+.form__upload-control {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.form__upload-control>.form__input {
+  background: #fafafa;
+}
+
+/* Button Grooup */
+.form__btn-group {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.form__btn {
+  padding: 8px 16px;
+  min-width: 120px;
+  background: none;
+  border-radius: 4px;
+}
+
+.form__btn.btn-reset {
+  border: 1px solid rgb(9, 118, 177);
+  background: #fafafa;
+  color: rgb(9, 118, 177);
+}
+
+.form__btn.btn-submit {
+  background: rgb(9, 118, 177);
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

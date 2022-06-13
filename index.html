@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Application Form</title>
+  </head>
+  <body>
+    <form action="#" class="form">
+      <h1 class="form__title">Registration Form</h1>
+
+      <h3 class="form__section">Personal Details</h3>
+
+      <!-- Personal -->
+      <div class="form__form-control">
+        <label class="form__label"
+          >Name <span class="required-symbol">*</span></label
+        >
+        <div class="form__input-group">
+          <input
+            type="text"
+            class="form__input"
+            placeholder="First"
+            id="nameFirst"
+            required
+          />
+          <input
+            type="text"
+            class="form__input"
+            placeholder="Last"
+            id="nameLast"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="form__form-control">
+        <label class="form__label"
+          >Date of Birth <span class="required-symbol">*</span></label
+        >
+        <input type="date" class="form__input" id="dob" required />
+      </div>
+
+      <div class="form__form-control">
+        <label class="form__label"
+          >Email <span class="required-symbol">*</span></label
+        >
+        <input type="text" class="form__input" id="email" required />
+      </div>
+
+      <div class="form__form-control">
+        <label class="form__label"
+          >Father's Name <span class="required-symbol">*</span></label
+        >
+        <div class="form__input-group">
+          <input
+            type="text"
+            class="form__input"
+            placeholder="First"
+            id="fatherFirst"
+            required
+          />
+          <input
+            type="text"
+            class="form__input"
+            placeholder="Last"
+            id="fatherLast"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="form__form-control">
+        <label class="form__label"
+          >Mother's Name <span class="required-symbol">*</span></label
+        >
+        <div class="form__input-group">
+          <input
+            type="text"
+            class="form__input"
+            placeholder="First"
+            id="motherFirst"
+            required
+          />
+          <input
+            type="text"
+            class="form__input"
+            placeholder="Last"
+            id="motherLast"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="form__form-control">
+        <label class="form__label"
+          >Gender <span class="required-symbol">*</span></label
+        >
+        <div>
+          <input
+            type="radio"
+            name="gender"
+            id="male"
+            class="form__radio"
+            required
+          />
+          <label for="male">M</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            name="gender"
+            id="female"
+            class="form__radio"
+            required
+          />
+          <label for="female">F</label>
+        </div>
+      </div>
+
+      <div class="form__form-control">
+        <label class="form__label"
+          >Nationality <span class="required-symbol">*</span></label
+        >
+        <input type="text" class="form__input" id="nationality" required />
+      </div>
+
+      <div class="form__form-control">
+        <label class="form__label"
+          >Home Address <span class="required-symbol">*</span></label
+        >
+        <input
+          type="text"
+          class="form__input"
+          placeholder="Street Address"
+          id="street"
+          required
+        />
+
+        <div class="form__input-group">
+          <input
+            type="text"
+            class="form__input"
+            placeholder="City"
+            id="city"
+            required
+          />
+          <select class="form__input" value="" id="country" required>
+            <option value="">Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form__form-control home">
+        <label class="form__label">Telephone - Home</label>
+        <input
+          type="text"
+          class="form__input"
+          id="telHome"
+          placeholder="### ### ####"
+        />
+      </div>
+
+      <div class="form__form-control">
+        <label class="form__label"
+          >Telephone - Mobile <span class="required-symbol">*</span></label
+        >
+        <input
+          type="text"
+          class="form__input"
+          placeholder="### ### ####"
+          id="telMobile"
+          required
+        />
+      </div>
+
+      <!-- Education -->
+      <h3 class="form__section">Educational Details</h3>
+      <div class="form__edu-control">
+        <label>HSC<span class="required-symbol">*</span></label>
+        <div class="form__edu-group">
+          <select value="" class="form__input" id="hscBoard" required>
+            <option value="">Select Board</option>
+            <option value="State Board">State Board</option>
+            <option value="ICSE">ICSE</option>
+            <option value="CBSE">CBSE</option>
+          </select>
+          <input
+            type="text"
+            placeholder="Institution Name"
+            class="form__input"
+            id="hscInstitute"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Percentage"
+            class="form__input"
+            id="hscPercent"
+            required
+          />
+        </div>
+      </div>
+      <div class="form__edu-control">
+        <label>SSC<span class="required-symbol">*</span></label>
+        <div class="form__edu-group">
+          <select value="" class="form__input" id="sscBoard" required>
+            <option value="">Select Board</option>
+            <option value="State Board">State Board</option>
+            <option value="ICSE">ICSE</option>
+            <option value="CBSE">CBSE</option>
+          </select>
+          <input
+            type="text"
+            placeholder="Institution Name"
+            class="form__input"
+            id="sscInstitute"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Percentage"
+            class="form__input"
+            id="sscPercent"
+            required
+          />
+        </div>
+      </div>
+      <div class="form__edu-control">
+        <label>Currently Pursuing<span class="required-symbol">*</span></label>
+        <div class="form__edu-group">
+          <select class="form__input" value="" id="currentBoard" required>
+            <option value="">Select Unitversity</option>
+            <option value="State Board">BPUT</option>
+            <option value="ICSE">VSSUT</option>
+          </select>
+          <input
+            type="text"
+            placeholder="Institution Name"
+            class="form__input"
+            id="currentInstitute"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Percentage"
+            class="form__input"
+            id="currentPercent"
+            required
+          />
+          <input
+            type="text"
+            placeholder="No. of Backlog (if any)"
+            class="form__input"
+            id="currentBacklog"
+            required
+          />
+        </div>
+      </div>
+
+      <!-- Upload Documents -->
+      <h3 class="form__section">Upload Documents</h3>
+      <div class="form__upload-control">
+        <label class="form__label"
+          >Upload Recent Photograph
+          <span class="required-symbol">*</span></label
+        >
+        <input type="file" class="form__input" id="photograph" required />
+      </div>
+      <div class="form__upload-control">
+        <label class="form__label"
+          >Upload HSC Marksheet <span class="required-symbol">*</span></label
+        >
+        <input type="file" class="form__input" id="hscMarksheet" required />
+      </div>
+      <div class="form__upload-control">
+        <label class="form__label"
+          >Upload SSC Marksheet <span class="required-symbol">*</span></label
+        >
+        <input type="file" class="form__input" id="sscMarksheet" required />
+      </div>
+      <div class="form__upload-control">
+        <label class="form__label"
+          >Upload All Semester Marksheet (as a single PDF)
+          <span class="required-symbol">*</span></label
+        >
+        <input type="file" class="form__input" id="currentMarksheet" required />
+      </div>
+
+      <div class="form__btn-group">
+        <button type="reset" class="form__btn btn-reset">Clear</button>
+        <button
+          type="submit"
+          class="form__btn btn-submit"
+          onclick="{()=> {handleSumbit()}}"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+    <script src="./app.js"></script>
+  </body>
+</html>
