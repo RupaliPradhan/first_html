@@ -1,2 +1,2 @@
 # first_html
-Its a html page
+created a html page
